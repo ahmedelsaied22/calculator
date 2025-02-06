@@ -8,7 +8,7 @@ arr.forEach((button) => {
     button.addEventListener("click", ()=> {
         // string = button.innerHTML;
         if(button.innerHTML == "="){
-            string = parseFloat(eval(string));
+            string = parseFloat(eval(string)).toFixed(2);
             input.value = string;
         }
         else if(button.innerHTML == "AC"){
@@ -16,29 +16,11 @@ arr.forEach((button) => {
             input.value = string;
         }
         else if(button.innerHTML == "DEL"){
-            string = string.substring(0, string.length -1)
+            string = string.substring(0, string.length -1);
         }
         else if(button.innerHTML != "="){
-            string += button.innerHTML;
-        }
-        input.value = string;
-
-        // else{
-        //     // console.log(input.innerHTML)
-        // }
+                string += button.innerHTML;
+            }
+            input.value = string;
     })
 })
-
-
-
-
-
-// bottons.forEach((button) => {
-//     button.addEventListener("click", () => {
-//         string = button.value;
-//         input.value = string;
-//     })
-//     if(button.value == "="){
-//         return input = eval(input.innerHTML);
-//     }
-// })
