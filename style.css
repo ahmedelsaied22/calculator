@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* display: flex; */
+    outline: none;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #474747, #123);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.calculator{
+    padding: 20px;
+    border: 2px solid #123;
+    border-radius: 16px;
+    box-shadow: 0 0 15px #ffffff52;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    width: 320px;
+    height: 60px;
+    padding: 12px;
+    margin: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: transparent;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 0 8px #ffffff86;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    letter-spacing: 2px;
+}
+input::placeholder{
+    color: white;
+}
+button{
+    background-color: transparent;
+    border: none;
+    padding: 2px;
+    margin: 12px;
+    width: 60px;
+    height: 60px;
+    font-size: 18px;
+    box-shadow: 0 0 8px #ffffff86;
+    cursor: pointer;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.equal{
+    background-color: rgba(255, 106, 0, 0.832);
+}
+.operation{
+    color: rgba(255, 106, 0, 0.832);
+}
